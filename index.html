@@ -161,20 +161,7 @@
       fullWidth: true,
       indicators: true
     });
-    function makeid(length, prefix) {
-      var result           = '';
-      var characters       = '1234567890QWERTYUIOPASDFGHJKLZXCVBNM';
-      var charactersLength = characters.length;
-      for ( var i = 0; i < length; i++ ) {
-          result += characters.charAt(Math.floor(Math.random() * charactersLength));            
-      }
-      return prefix+result;
-    }
-    for ( var i = 0; i < 1000; i++ ) {
-      console.log(makeid(12,'TGD'));
-      // untuk hasil yang lain silahkan ganti param di console log menjadi 'YCC','SKU'
-    }
- 
+    
   </script>
 
   </body>

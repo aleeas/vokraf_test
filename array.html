@@ -16,7 +16,6 @@
             Hasil ada di console.log
         </div>
     </div>
- </body>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
@@ -46,6 +45,13 @@
             }
         ]
 
+        let arrayOfNewUsers = newUsers.map(usr => {
+            if (usr.tag ){
+                return "new_user";
+            }        
+        });
+        console.log(arrayOfNewUsers);
+
         const emailUsers = [
             "george.bluth@reqres.in",
             "janet.weaver@reqres.in",
@@ -53,21 +59,22 @@
             "eve.holt@reqres.in",
             "charles.morris@reqres.in"
         ];
-        
+        let arrayOfemailUsers = emailUsers.map(usrEmail => {
+           return usrEmail;           
+        });
+        console.log(arrayOfemailUsers);
+
         const emailOldUsers = ["janet.weaver@reqres.in", "eve.holt@reqres.in"]
+        let arrayOfemailOldUsers = emailOldUsers.map(usrEmailOld => {
+                if(usrEmailOld[0]){
+                    return "old_user";
+                }else if(usrEmailOld[1]){
+                    return "old_user";
+                }    
+        });
+        console.log(arrayOfemailOldUsers);
 
-
-    console.log( newUsers.filter(function(obj) {
-        return obj.tag === "new_user";        
-    }));
-
-    console.log( emailUsers.filter(function(obj) {
-        return obj;        
-    }));
-
-    console.log( emailOldUsers.filter(function(obj) {
-        return obj;        
-    }));
+      
 
  
   </script>

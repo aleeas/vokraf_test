@@ -1,0 +1,55 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.heroBG{
+  background: url("../img/SBS-jewellery-luna-stella.jpg")no-repeat;
+  background-size: cover;
+  background-position-y: -88px;
+
+}
+.captionDesc{
+  position: absolute;
+  bottom: 15%;
+  padding: 50px;
+  max-width: 545px;
+}
+.button-more{
+  background: none;
+  border: 2px solid #fff;
+  line-height: 2;
+}
+@media only screen and (max-width: 600px) {
+  .heroBG {
+    background: url(../img/SBS-jewellery-luna-stella.jpg)no-repeat;
+    background-size: cover;
+    background-position-y: -50px;
+    background-position-x: -35px;
+  }
+}
+.sidenav-custom li{
+  float: none;
+  line-height: 48px;
+  text-align: center;
+  
+}
+.sidenav-custom li a{
+  height: auto;
+}
+.logo-sidenav{
+  margin-top: 30px;
+}
+
+.btnSignnav{
+  background:#1f1f1f;
+}

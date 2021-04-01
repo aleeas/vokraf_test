@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            Hasil ada di console.log
+        </div>
+    </div>
+ </body>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+        const newUsers = [
+            {
+                "id":1,
+                "email":"george.bluth@reqres.in",
+                "first_name":"George",
+                "last_name":"Bluth",
+                "tag":"new_user"
+            },
+            {
+                "id":3,
+                "email":"emma.wong@reqres.in",
+                "first_name":"Emma",
+                "last_name":"Wong",
+                "tag":"new_user"
+            },
+            {
+                "id":5,
+                "email":"charles.morris@reqres.in",
+                "first_name":"Charles",
+                "last_name":"Morris",
+                "tag":"new_user"
+            }
+        ]
+
+        const emailUsers = [
+            "george.bluth@reqres.in",
+            "janet.weaver@reqres.in",
+            "emma.wong@reqres.in",
+            "eve.holt@reqres.in",
+            "charles.morris@reqres.in"
+        ];
+        
+        const emailOldUsers = ["janet.weaver@reqres.in", "eve.holt@reqres.in"]
+
+
+    console.log( newUsers.filter(function(obj) {
+        return obj.tag === "new_user";        
+    }));
+
+    console.log( emailUsers.filter(function(obj) {
+        return obj;        
+    }));
+
+    console.log( emailOldUsers.filter(function(obj) {
+        return obj;        
+    }));
+
+ 
+  </script>
+
+  </body>
+</html>
+
